@@ -2,7 +2,7 @@
 
 ##  Live Demo
 
-> _Coming soon — will be deployed on Vercel with a custom domain._
+https://cv-portfolio-xi-gold.vercel.app/
 
 ##  Features
 
@@ -52,30 +52,6 @@ CV-Portfolio/
 │   └── main.jsx
 ├── index.html
 └── vite.config.js
-```
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/p3lm3shka1/CV-Portfolio.git
-
-# Navigate to project directory
-cd CV-Portfolio
-
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-```
-
-The app will be available at `http://localhost:5173`
-
-### Build for Production
-
-```bash
-npm run build
 ```
 
 ---
