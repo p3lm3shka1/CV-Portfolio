@@ -1,20 +1,18 @@
 import { useEffect, useRef } from "react";
+import { useLang } from "../../contexts/LanguageContext";
 import "./Hero.scss";
 
 function Hero() {
   const heroRef = useRef(null);
+  const { t } = useLang();
 
   useEffect(() => {
     const hero = heroRef.current;
-
     const handleMouseMove = (e) => {
       const { left, top } = hero.getBoundingClientRect();
-      const x = e.clientX - left;
-      const y = e.clientY - top;
-      hero.style.setProperty("--spotlight-x", `${x}px`);
-      hero.style.setProperty("--spotlight-y", `${y}px`);
+      hero.style.setProperty("--spotlight-x", `${e.clientX - left}px`);
+      hero.style.setProperty("--spotlight-y", `${e.clientY - top}px`);
     };
-
     hero.addEventListener("mousemove", handleMouseMove);
     return () => hero.removeEventListener("mousemove", handleMouseMove);
   }, []);
@@ -23,17 +21,16 @@ function Hero() {
     <section className="hero" id="hero" ref={heroRef}>
       <div className="hero__spotlight" />
       <div className="hero__content container">
-        <p className="hero__greeting">Hi, my name is</p>
+        <p className="hero__greeting">{t.hero.greeting}</p>
         <h1 className="hero__name">
           Vitalij
           <br />
           <span>Lazarev</span>
         </h1>
-        <h2 className="hero__role">Frontend Developer</h2>
-
+        <h2 className="hero__role">{t.hero.role}</h2>
         <div className="hero__actions">
           <a href="#projects" className="hero__btn hero__btn--primary">
-            View Projects
+            {t.hero.viewProjects}
           </a>
         </div>
       </div>

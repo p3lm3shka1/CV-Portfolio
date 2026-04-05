@@ -106,4 +106,25 @@
     height: 24px;
     filter: $filter;
   }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__lang {
+    padding: 6px 14px;
+    border: 1px solid $border;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $text-secondary;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: $accent;
+      color: $accent;
+    }
+  }
 }

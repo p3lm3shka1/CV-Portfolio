@@ -1,21 +1,23 @@
 import { useState, useEffect } from "react";
-
-import "./Navbar.scss";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 import logo from "../../assets/images/logos/logo.png";
-import navIcon from "../../assets/images/logos/nav-icon.svg";
-import closeIcon from "../../assets/images/logos/close-icon.svg";
 
-const navLinks = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-];
+import { useLang } from "../../contexts/LanguageContext";
+
+import "./Navbar.scss";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { lang, t, toggleLang } = useLang();
+
+  const navLinks = [
+    { name: t.nav.home, href: "#hero" },
+    { name: t.nav.about, href: "#about" },
+    { name: t.nav.skills, href: "#skills" },
+    { name: t.nav.projects, href: "#projects" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -29,14 +31,14 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__container container">
         <a href="#hero" className="navbar__logo">
-          <img src={logo} alt="Logo" className="" />
+          <img src={logo} alt="Logo" />
         </a>
 
         <ul
           className={`navbar__links ${menuOpen ? "navbar__links--open" : ""}`}
         >
           {navLinks.map((link) => (
-            <li key={link.name}>
+            <li key={link.href}>
               <a href={link.href} onClick={handleLinkClick}>
                 {link.name}
               </a>
@@ -44,21 +46,19 @@ function Navbar() {
           ))}
         </ul>
 
-        <button
-          className="navbar__toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? (
-            <img
-              src={closeIcon}
-              alt="Close menu"
-              className="navbar__icon--close"
-            />
-          ) : (
-            <img src={navIcon} alt="Open menu" className="navbar__icon--open" />
-          )}
-        </button>
+        <div className="navbar__right">
+          <button className="navbar__lang" onClick={toggleLang}>
+            {lang === "en" ? "LT" : "EN"}
+          </button>
+
+          <button
+            className="navbar__toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <HiX size={28} /> : <HiMenuAlt3 size={28} />}
+          </button>
+        </div>
       </div>
     </nav>
   );

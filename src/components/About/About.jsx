@@ -1,9 +1,8 @@
 import { useState } from "react";
-
+import { useLang } from "../../contexts/LanguageContext";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import { SiReaddotcv } from "react-icons/si";
-
-import avatar from "../../assets/images/photo/20260323_225211.webp";
+import profilePhoto from "../../assets/images/photo/profile-photo.jpg";
 
 import "./About.scss";
 
@@ -34,32 +33,28 @@ const cvFiles = [
 ];
 
 function About() {
+  const { t } = useLang();
   const [cvOpen, setCvOpen] = useState(false);
 
   return (
     <section className="about section" id="about">
       <div className="about__container container">
         <h2 className="section__title">
-          About <span>Me</span>
+          {t.about.title} <span>{t.about.titleAccent}</span>
         </h2>
 
         <div className="about__content">
           <div className="about__image">
-            <img src={avatar} alt="Vitalij Lazarev" />
+            <img src={profilePhoto} alt="Vitalij Lazarev" />
           </div>
 
           <div className="about__info">
             <div className="about__text">
+              <p>{t.about.text1}</p>
               <p>
-                I'm a Frontend Developer passionate about building clean,
-                responsive, and user-friendly web applications. I enjoy turning
-                designs into pixel-perfect, accessible interfaces.
+                {t.about.text2} <span>{t.about.text2Accent}</span>
               </p>
-              <p>
-                I'm always looking to learn new technologies and improve my
-                skills. Currently focusing on React ecosystem and modern
-                JavaScript.
-              </p>
+              <p>{t.about.text3}</p>
             </div>
 
             <div className="about__contacts">

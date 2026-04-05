@@ -1,0 +1,120 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects"
+    },
+    "hero": {
+      "greeting": "Hi, my name is",
+      "role": "Junior Web Developer",
+      "viewProjects": "View Projects"
+    },
+    "about": {
+      "title": "About",
+      "titleAccent": "Me",
+      "text1": "I am a beginner Full Stack Developer currently studying at Vilniaus Coding School in the JavaScript Full Stack program. My focus is modern web development and learning how to build full stack applications.",
+      "text2": "Backend logic is now in progress..",
+      "text3": "I'm always looking to learn new technologies and improve my skills.",
+      "cvLabel": "CV",
+      "cvValue": "Download CV"
+    },
+    "skills": {
+      "title": "My",
+      "titleAccent": "Skills"
+    },
+    "projects": {
+      "title": "My",
+      "titleAccent": "Projects",
+      "items": [
+        {
+          "title": "API-Countries-React-Vite",
+          "description": "I used GET requests to the RestCountriesAPI and React Router for page navigation."
+        },
+        {
+          "title": "Bookmark-landing-page",
+          "description": "A responsive landing page from a Frontend Mentor challenge"
+        },
+        {
+          "title": "React Todo App",
+          "description": "A Todo App featuring dark/light theme switching, todo filtering, and localStorage persistence."
+        },
+        {
+          "title": "Browser Extension",
+          "description": "A browser extension with filtering All/Active/Inactive and theme switching."
+        },
+        {
+          "title": "TV Maze API",
+          "description": "A simple web app for browsing TV shows using the TVMaze API."
+        },
+        {
+          "title": "E-commerce Product Page",
+          "description": "An e-commerce product page with interactive image gallery and shopping cart functionality."
+        }
+      ]
+    },
+    "footer": {
+      "copyright": "Vitalij Lazarev."
+    }
+  },
+  "lt": {
+    "nav": {
+      "home": "Pradžia",
+      "about": "Apie mane",
+      "skills": "Įgūdžiai",
+      "projects": "Projektai"
+    },
+    "hero": {
+      "greeting": "Sveiki, mano vardas",
+      "role": "Jaunesnysis Web programuotojas",
+      "viewProjects": "Žiūrėti projektus"
+    },
+    "about": {
+      "title": "Apie",
+      "titleAccent": "Mane",
+      "text1": "Esu pradedantis Full Stack programuotojas, šiuo metu studijuoju Vilniaus Coding School JavaScript Full Stack programoje. Mano dėmesio centre yra modernus web kūrimas ir mokymasis, kaip kurti full stack aplikacijas.",
+      "text2": "Backend logika šiuo metu yra kuriama..",
+      "text3": "Visada ieškau naujų technologijų ir tobulinu savo įgūdžius.",
+      "cvLabel": "CV",
+      "cvValue": "Atsisiųsti CV"
+    },
+    "skills": {
+      "title": "Mano",
+      "titleAccent": "Įgūdžiai"
+    },
+    "projects": {
+      "title": "Mano",
+      "titleAccent": "Projektai",
+      "items": [
+        {
+          "title": "API-Countries-React-Vite",
+          "description": "Naudojau GET užklausas iš RestCountries API ir React Router puslapių navigacijai."
+        },
+        {
+          "title": "Bookmark-landing-page",
+          "description": "Responsyvus Frontend Mentor iššūkio pradinis puslapis."
+        },
+        {
+          "title": "React Todo App",
+          "description": "Todo aplikacija su tamsios/šviesios temos perjungimu, užduočių filtravimu ir localStorage saugojimu."
+        },
+        {
+          "title": "Browser Extension",
+          "description": "Naršyklės plėtinys su filtravimu Visi/Aktyvūs/Neaktyvūs ir temos perjungimu."
+        },
+        {
+          "title": "TV Maze API",
+          "description": "Paprasta žiniatinklio programa TV laidų naršymui naudojant TVMaze API."
+        },
+        {
+          "title": "E-commerce Product Page",
+          "description": "Produkto puslapis su interaktyvia nuotraukų galerija ir pirkinių krepšelio funkcionalumu."
+        }
+      ]
+    },
+    "footer": {
+      "copyright": "Vitalij Lazarev."
+    }
+  }
+}
