@@ -1,0 +1,60 @@
+@use "../../styles/variables" as *;
+@use "../../styles/media" as *;
+
+.footer {
+  background-color: $bg-secondary;
+  border-top: 1px solid $border;
+  padding: 40px 0 24px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    filter: $filter;
+
+    &:hover {
+      filter: $filter-hover;
+    }
+    span {
+      color: $accent;
+    }
+  }
+  &__socials {
+    display: flex;
+    gap: 16px;
+
+    a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $border;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $text-secondary;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: $accent;
+        color: $accent;
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid $border;
+
+    p {
+      color: $text-muted;
+      font-size: 0.85rem;
+    }
+  }
+}

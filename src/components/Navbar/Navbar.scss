@@ -1,0 +1,109 @@
+@use "../../styles/variables" as *;
+@use "../../styles/media" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $nav-height;
+  z-index: 1000;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &--scrolled {
+    background-color: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(10px);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo {
+    filter: $filter;
+
+    &:hover {
+      filter: $filter-hover;
+    }
+
+    span {
+      color: $accent;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 32px;
+
+    a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: $text-secondary;
+      transition: color 0.2s ease;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $accent;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        color: $text-primary;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    @include tablet {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      flex-direction: column;
+      background-color: rgba($bg-secondary, 0.7);
+      padding: 100px 40px 40px;
+      backdrop-filter: blur(10px);
+      gap: 24px;
+      transition: right 0.3s ease;
+
+      &--open {
+        right: 0;
+      }
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__toggle {
+    display: none;
+    color: $text-primary;
+    z-index: 1001;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__icon--open,
+  &__icon--close {
+    width: 24px;
+    height: 24px;
+    filter: $filter;
+  }
+}

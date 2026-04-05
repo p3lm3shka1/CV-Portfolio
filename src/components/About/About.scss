@@ -1,0 +1,162 @@
+@use "../../styles/variables" as *;
+@use "../../styles/media" as *;
+
+.about {
+  background-color: $bg-secondary;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: start;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  &__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+
+    @include mobile {
+      width: 220px;
+      height: 280px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 32px;
+
+    p {
+      color: $text-secondary;
+      font-size: 1rem;
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__contact-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: $bg-card;
+    border: 1px solid $border;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: $accent;
+      background-color: $bg-card-hover;
+    }
+  }
+
+  &__contact-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 50%;
+    background-color: rgba(231, 76, 60, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accent;
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__contact-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $text-primary;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__contact-value {
+    font-size: 0.8rem;
+    color: $text-secondary;
+  }
+
+  &__cv-wrapper {
+    position: relative;
+  }
+
+  &__contact-card--cv {
+    width: 100%;
+    cursor: pointer;
+
+    &.active {
+      border-color: $accent;
+      background-color: $bg-card-hover;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  &__cv-arrow {
+    margin-left: auto;
+    font-size: 1.4rem;
+    color: $text-muted;
+    transition: transform 0.3s ease;
+
+    &--open {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__cv-dropdown {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+
+    &--open {
+      grid-template-rows: 1fr;
+    }
+
+    > div {
+      overflow: hidden;
+    }
+  }
+
+  &__cv-option {
+    display: block;
+    padding: 14px 20px 14px 80px;
+    background-color: $bg-card;
+    border: 1px solid $border;
+    border-top: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $text-secondary;
+    transition: all 0.3s ease;
+
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+
+    &:hover {
+      background-color: $bg-card-hover;
+      color: $accent;
+      padding-left: 88px;
+    }
+  }
+}
