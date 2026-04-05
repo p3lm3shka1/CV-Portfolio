@@ -15,7 +15,8 @@
       "title": "About",
       "titleAccent": "Me",
       "text1": "I am a beginner Full Stack Developer currently studying at Vilniaus Coding School in the JavaScript Full Stack program. My focus is modern web development and learning how to build full stack applications.",
-      "text2": "Backend logic is now in progress..",
+      "text2": "Backend logic is now in ",
+      "text2Accent": "progress..",
       "text3": "I'm always looking to learn new technologies and improve my skills.",
       "cvLabel": "CV",
       "cvValue": "Download CV"
@@ -74,7 +75,8 @@
       "title": "Apie",
       "titleAccent": "Mane",
       "text1": "Esu pradedantis Full Stack programuotojas, šiuo metu studijuoju Vilniaus Coding School JavaScript Full Stack programoje. Mano dėmesio centre yra modernus web kūrimas ir mokymasis, kaip kurti full stack aplikacijas.",
-      "text2": "Backend logika šiuo metu yra kuriama..",
+      "text2": "Backend logika šiuo metu yra ",
+      "text2Accent": "kraunasi",
       "text3": "Visada ieškau naujų technologijų ir tobulinu savo įgūdžius.",
       "cvLabel": "CV",
       "cvValue": "Atsisiųsti CV"
