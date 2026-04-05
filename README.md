@@ -7,7 +7,6 @@ https://cv-portfolio-xi-gold.vercel.app/
 ##  Features
 
 - **Spotlight Effect** — Interactive cursor-following glow on the hero section
-- **Dark Theme** — Sleek dark UI with `#e74c3c` red accents
 - **Responsive Design** — Fully adaptive for desktop, tablet, and mobile
 - **Project Cards** — Image previews with hover overlay showing description, tech stack, and links
 - **CV Download** — Dropdown picker with English and Lithuanian versions
