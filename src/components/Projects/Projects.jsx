@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { IoOpenOutline } from "react-icons/io5";
-import { useLang } from "../../contexts/LanguageContext";
 
 import restcountries from "../../assets/images/photo/restcountries.jpg";
 import bookmark from "../../assets/images/photo/bookmark.jpg";
@@ -13,36 +12,52 @@ import "./Projects.scss";
 
 const projectsData = [
   {
+    title: "API-Countries-React-Vite",
+    description:
+      "I used GET requests to the RestCountriesAPI and React Router for page navigation.",
     tech: ["React+Vite", "SCSS", "REST API"],
     image: restcountries,
     github: "https://github.com/p3lm3shka1/API-Countries-React-Vite",
     live: "https://rest-api-countries-react-vite.vercel.app/",
   },
   {
+    title: "Bookmark-landing-page",
+    description: "A responsive Frontend Mentor challenge of landing page",
     tech: ["React+Vite", "Tailwind CSS"],
     image: bookmark,
     github: "https://github.com/p3lm3shka1/Bookmark-landing-page-master",
     live: "https://bookmark-page-react-tailwind.vercel.app/",
   },
   {
+    title: "React Todo App",
+    description:
+      "Challenge Todo App, featuring dark/light theme switching, todo filtering, and localStorage persistence.",
     tech: ["React+Vite", "SCSS", "JS"],
     image: todo,
     github: "https://github.com/p3lm3shka1/React-Todo-with-Local-Storage",
     live: "https://react-todo-rust-chi.vercel.app/",
   },
   {
+    title: "Browser Extension",
+    description:
+      "Browser extension with filtering All/Active/Inactive and theme switching.",
     tech: ["JS", "CSS", "HTML"],
     image: extensions,
     github: "https://github.com/p3lm3shka1/browser-ext",
     live: "https://browser-ext.vercel.app/",
   },
   {
+    title: "TV Maze API",
+    description: "A simple web app for browsing TV shows using the TVMaze API.",
     tech: ["JS", "CSS", "HTML"],
     image: tvmaze,
     github: "https://github.com/p3lm3shka1/TV-API-TVmaze-",
     live: "https://p3lm-tv-api-tvmaze.vercel.app/",
   },
   {
+    title: "E-commerce Product Page",
+    description:
+      "Product page with interactive image gallery and shopping cart functionality.",
     tech: ["React+Vite", "SCSS"],
     image: ecommerce,
     github:
@@ -52,38 +67,31 @@ const projectsData = [
 ];
 
 function Projects() {
-  const { t } = useLang();
-
   return (
     <section className="projects section" id="projects">
-      <div className="projects__container container">
+      <header className="projects__container container">
         <h2 className="section__title">
-          {t.projects.title} <span>{t.projects.titleAccent}</span>
+          My <span>Projects</span>
         </h2>
 
-        <div className="projects__grid">
+        <ul className="projects__grid">
           {projectsData.map((project, ind) => (
-            <div className="projects__card" key={ind}>
-              <div className="projects__preview">
-                <img
-                  src={project.image}
-                  alt={`${t.projects.items[ind].title} preview`}
-                />
+            <li className="projects__card" key={ind}>
+              <figure className="projects__preview">
+                <img src={project.image} alt={`${project.title} preview`} />
 
-                <div className="projects__overlay">
-                  <div className="projects__overlay-content">
-                    <h3 className="projects__overlay-title">
-                      {t.projects.items[ind].title}
-                    </h3>
+                <figcaption className="projects__overlay">
+                  <article className="projects__overlay-content">
+                    <h3 className="projects__overlay-title">{project.title}</h3>
                     <p className="projects__overlay-desc">
-                      {t.projects.items[ind].description}
+                      {project.description}
                     </p>
-                    <div className="projects__overlay-tech">
+                    <ul className="projects__overlay-tech">
                       {project.tech.map((t) => (
-                        <span key={t}>{t}</span>
+                        <li key={t}>{t}</li>
                       ))}
-                    </div>
-                    <div className="projects__overlay-links">
+                    </ul>
+                    <nav className="projects__overlay-links">
                       <a
                         href={project.github}
                         aria-label="GitHub"
@@ -100,14 +108,14 @@ function Projects() {
                       >
                         <IoOpenOutline size={30} />
                       </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    </nav>
+                  </article>
+                </figcaption>
+              </figure>
+            </li>
           ))}
-        </div>
-      </div>
+        </ul>
+      </header>
     </section>
   );
 }

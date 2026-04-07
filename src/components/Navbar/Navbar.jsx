@@ -3,20 +3,17 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 import logo from "../../assets/images/logos/logo.png";
 
-import { useLang } from "../../contexts/LanguageContext";
-
 import "./Navbar.scss";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { lang, t, toggleLang } = useLang();
 
   const navLinks = [
-    { name: t.nav.home, href: "#hero" },
-    { name: t.nav.about, href: "#about" },
-    { name: t.nav.skills, href: "#skills" },
-    { name: t.nav.projects, href: "#projects" },
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
   ];
 
   useEffect(() => {
@@ -33,7 +30,6 @@ function Navbar() {
         <a href="#hero" className="navbar__logo">
           <img src={logo} alt="Logo" />
         </a>
-
         <ul
           className={`navbar__links ${menuOpen ? "navbar__links--open" : ""}`}
         >
@@ -45,12 +41,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
-
         <div className="navbar__right">
-          <button className="navbar__lang" onClick={toggleLang}>
-            {lang === "en" ? "LT" : "EN"}
-          </button>
-
           <button
             className="navbar__toggle"
             onClick={() => setMenuOpen(!menuOpen)}

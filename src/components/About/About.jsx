@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useLang } from "../../contexts/LanguageContext";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import { SiReaddotcv } from "react-icons/si";
 import profilePhoto from "../../assets/images/photo/profile-photo.jpg";
@@ -33,31 +32,38 @@ const cvFiles = [
 ];
 
 function About() {
-  const { t } = useLang();
   const [cvOpen, setCvOpen] = useState(false);
 
   return (
     <section className="about section" id="about">
-      <div className="about__container container">
+      <header className="about__container container">
         <h2 className="section__title">
-          {t.about.title} <span>{t.about.titleAccent}</span>
+          About <span>Me</span>
         </h2>
 
-        <div className="about__content">
-          <div className="about__image">
+        <article className="about__content">
+          <figure className="about__image">
             <img src={profilePhoto} alt="Vitalij Lazarev" />
-          </div>
+          </figure>
 
-          <div className="about__info">
-            <div className="about__text">
-              <p>{t.about.text1}</p>
+          <aside className="about__info">
+            <article className="about__text">
               <p>
-                {t.about.text2} <span>{t.about.text2Accent}</span>
+                I am a beginner Full Stack Developer currently studying at
+                Vilniaus Coding School in the JavaScript Full Stack program. My
+                focus is modern web development and learning how to build full
+                stack applications.
               </p>
-              <p>{t.about.text3}</p>
-            </div>
+              <p>
+                Backend logic is now in <span>progress..</span>
+              </p>
+              <p>
+                I'm always looking to learn new technologies and improve my
+                skills.
+              </p>
+            </article>
 
-            <div className="about__contacts">
+            <address className="about__contacts">
               {contacts.map((item) => (
                 <a
                   href={item.href}
@@ -66,26 +72,26 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="about__contact-icon">{item.icon}</div>
-                  <div className="about__contact-info">
+                  <figure className="about__contact-icon">{item.icon}</figure>
+                  <figcaption className="about__contact-info">
                     <span className="about__contact-label">{item.label}</span>
                     <span className="about__contact-value">{item.value}</span>
-                  </div>
+                  </figcaption>
                 </a>
               ))}
 
-              <div className="about__cv-wrapper">
+              <nav className="about__cv-wrapper">
                 <button
                   className={`about__contact-card about__contact-card--cv ${cvOpen ? "active" : ""}`}
                   onClick={() => setCvOpen(!cvOpen)}
                 >
-                  <div className="about__contact-icon">
+                  <figure className="about__contact-icon">
                     <SiReaddotcv size={20} />
-                  </div>
-                  <div className="about__contact-info">
+                  </figure>
+                  <figcaption className="about__contact-info">
                     <span className="about__contact-label">CV</span>
                     <span className="about__contact-value">Download CV</span>
-                  </div>
+                  </figcaption>
                   <span
                     className={`about__cv-arrow ${cvOpen ? "about__cv-arrow--open" : ""}`}
                   >
@@ -93,10 +99,10 @@ function About() {
                   </span>
                 </button>
 
-                <div
+                <menu
                   className={`about__cv-dropdown ${cvOpen ? "about__cv-dropdown--open" : ""}`}
                 >
-                  <div>
+                  <li>
                     {cvFiles.map((cv) => (
                       <a
                         href={cv.href}
@@ -109,13 +115,13 @@ function About() {
                         {cv.label}
                       </a>
                     ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                  </li>
+                </menu>
+              </nav>
+            </address>
+          </aside>
+        </article>
+      </header>
     </section>
   );
 }

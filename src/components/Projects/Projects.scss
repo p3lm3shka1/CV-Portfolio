@@ -8,6 +8,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 28px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
     @include mobile {
       grid-template-columns: 1fr;
@@ -40,6 +43,14 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+    }
   }
 
   &__image {
@@ -89,8 +100,10 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
+    list-style: none;
+    padding: 0;
 
-    span {
+    li {
       font-size: 0.78rem;
       padding: 4px 12px;
       background-color: rgba(231, 76, 60, 0.15);
