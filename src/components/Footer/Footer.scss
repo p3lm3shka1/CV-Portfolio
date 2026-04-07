@@ -4,7 +4,7 @@
 .footer {
   background-color: $bg-secondary;
   border-top: 1px solid $border;
-  padding: 40px 0 24px;
+  padding: 20px 0 10px;
 
   &__top {
     display: flex;
@@ -22,6 +22,18 @@
       filter: $filter-hover;
     }
     span {
+      color: $accent;
+    }
+  }
+  &__portfolio {
+    font-size: 1rem;
+    color: $text-secondary;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+
+    &:hover {
       color: $accent;
     }
   }
@@ -45,17 +57,6 @@
         border-color: $accent;
         color: $accent;
       }
-    }
-  }
-
-  &__bottom {
-    text-align: center;
-    padding-top: 24px;
-    border-top: 1px solid $border;
-
-    p {
-      color: $text-muted;
-      font-size: 0.85rem;
     }
   }
 }

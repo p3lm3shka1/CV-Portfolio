@@ -11,6 +11,7 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
+import { useLang } from "../../contexts/LanguageContext";
 import "./Skills.scss";
 
 const skills = [
@@ -27,11 +28,13 @@ const skills = [
 ];
 
 function Skills() {
+  const { t } = useLang();
+
   return (
     <section className="skills section" id="skills">
       <div className="skills__container container">
         <h2 className="section__title">
-          My <span>Skills</span>
+          {t.skills.title} <span>{t.skills.titleAccent}</span>
         </h2>
         <div className="skills__grid">
           {skills.map((skill) => (

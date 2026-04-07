@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
+import { useLang } from "../../contexts/LanguageContext";
 
 import "./Hero.scss";
 
 function Hero() {
+  const { t } = useLang();
   const heroRef = useRef(null);
 
   useEffect(() => {
@@ -20,16 +22,16 @@ function Hero() {
     <section className="hero" id="hero" ref={heroRef}>
       <div className="hero__spotlight" />
       <div className="hero__content container">
-        <p className="hero__greeting">Hi, my name is</p>
+        <p className="hero__greeting">{t.hero.greeting}</p>
         <h1 className="hero__name">
-          Vitalij
+          Vitalijus
           <br />
-          <span>Lazarev</span>
+          <span>Lazarevas</span>
         </h1>
-        <h2 className="hero__role">Junior Web Developer</h2>
+        <h2 className="hero__role">{t.hero.role}</h2>
         <div className="hero__actions">
           <a href="#projects" className="hero__btn hero__btn--primary">
-            View Projects
+            {t.hero.viewProjects}
           </a>
         </div>
       </div>

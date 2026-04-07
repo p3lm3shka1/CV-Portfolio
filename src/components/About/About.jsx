@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import { SiReaddotcv } from "react-icons/si";
+
+import { useLang } from "../../contexts/LanguageContext";
+
 import profilePhoto from "../../assets/images/photo/profile-photo.jpg";
 
 import "./About.scss";
@@ -10,7 +13,7 @@ const contacts = [
     icon: <FaLinkedinIn size={20} />,
     label: "LinkedIn",
     value: "linkedin.com/in/vitalij-lazarev-353857213",
-    href: "https://www.linkedin.com/in/vitalij-lazarev-353857213/",
+    href: "https://www.linkedin.com/in/vitalijus-lazarevas-353857213/",
   },
   {
     icon: <FaGithub size={20} />,
@@ -33,12 +36,13 @@ const cvFiles = [
 
 function About() {
   const [cvOpen, setCvOpen] = useState(false);
+  const { t } = useLang();
 
   return (
     <section className="about section" id="about">
       <header className="about__container container">
         <h2 className="section__title">
-          About <span>Me</span>
+          {t.about.title} <span>{t.about.me}</span>
         </h2>
 
         <article className="about__content">
@@ -48,19 +52,10 @@ function About() {
 
           <aside className="about__info">
             <article className="about__text">
-              <p>
-                I am a beginner Full Stack Developer currently studying at
-                Vilniaus Coding School in the JavaScript Full Stack program. My
-                focus is modern web development and learning how to build full
-                stack applications.
-              </p>
-              <p>
-                Backend logic is now in <span>progress..</span>
-              </p>
-              <p>
-                I'm always looking to learn new technologies and improve my
-                skills.
-              </p>
+              <p>{t.about.description1}</p>
+              <p>{t.about.description2}</p>
+              <p>{t.about.backendProgress}</p>
+              <p>{t.about.learningNewTechnologies}</p>
             </article>
 
             <address className="about__contacts">
@@ -88,10 +83,12 @@ function About() {
                   <figure className="about__contact-icon">
                     <SiReaddotcv size={20} />
                   </figure>
-                  <figcaption className="about__contact-info">
+                  <section className="about__contact-info">
                     <span className="about__contact-label">CV</span>
-                    <span className="about__contact-value">Download CV</span>
-                  </figcaption>
+                    <span className="about__contact-value">
+                      {t.about.cvValue}
+                    </span>
+                  </section>
                   <span
                     className={`about__cv-arrow ${cvOpen ? "about__cv-arrow--open" : ""}`}
                   >

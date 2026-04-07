@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
+import { RiGitRepositoryFill } from "react-icons/ri";
 import logo from "../../assets/images/logos/logo.png";
 import "./Footer.scss";
 
@@ -10,10 +11,19 @@ function Footer() {
           <a href="#hero" className="footer__logo">
             <img src={logo} alt="Vitalij Lazarev Logo" />
           </a>
-
+          <a
+            href="https://github.com/p3lm3shka1/CV-Portfolio"
+            className="footer__portfolio"
+            aria-label="Portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <RiGitRepositoryFill />
+            Portfolio's repository
+          </a>
           <div className="footer__socials">
             <a
-              href="https://www.linkedin.com/in/vitalij-lazarev-353857213/"
+              href="https://www.linkedin.com/in/vitalijus-lazarevas-353857213/"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
@@ -32,10 +42,6 @@ function Footer() {
               <FaEnvelope />
             </a>
           </div>
-        </div>
-
-        <div className="footer__bottom">
-          <p>&copy; {new Date().getFullYear()} Vitalij Lazarev.</p>
         </div>
       </div>
     </footer>

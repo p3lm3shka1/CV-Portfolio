@@ -14,10 +14,10 @@
     "about": {
       "title": "About",
       "titleAccent": "Me",
-      "text1": "I am a beginner Full Stack Developer currently studying at Vilniaus Coding School in the JavaScript Full Stack program. My focus is modern web development and learning how to build full stack applications.",
-      "text2": "Backend logic is now in ",
-      "text2Accent": "progress..",
-      "text3": "I'm always looking to learn new technologies and improve my skills.",
+      "text1": "I am a Junior Full Stack Developer currently studying at Vilnius Coding School in the JavaScript Full Stack program. My focus is on modern web development and building scalable full stack applications.",
+      "text2": "Backend development is currently",
+      "text2Accent": "in progress.",
+      "text3": "I am continuously expanding my knowledge by learning new technologies and improving my technical skills.",
       "cvLabel": "CV",
       "cvValue": "Download CV"
     },
@@ -31,27 +31,27 @@
       "items": [
         {
           "title": "API-Countries-React-Vite",
-          "description": "I used GET requests to the RestCountriesAPI and React Router for page navigation."
+          "description": "Implemented GET requests to the RestCountries API and used React Router for client-side navigation."
         },
         {
           "title": "Bookmark-landing-page",
-          "description": "A responsive landing page from a Frontend Mentor challenge"
+          "description": "Responsive landing page built based on a Frontend Mentor challenge."
         },
         {
           "title": "React Todo App",
-          "description": "A Todo App featuring dark/light theme switching, todo filtering, and localStorage persistence."
+          "description": "A Todo application featuring theme switching (dark/light), filtering functionality, and localStorage persistence."
         },
         {
           "title": "Browser Extension",
-          "description": "A browser extension with filtering All/Active/Inactive and theme switching."
+          "description": "Browser extension with filtering (All/Active/Inactive) and theme switching functionality."
         },
         {
           "title": "TV Maze API",
-          "description": "A simple web app for browsing TV shows using the TVMaze API."
+          "description": "A web application for browsing TV shows using the TVMaze API."
         },
         {
           "title": "E-commerce Product Page",
-          "description": "An e-commerce product page with interactive image gallery and shopping cart functionality."
+          "description": "E-commerce product page with an interactive image gallery and shopping cart functionality."
         }
       ]
     },
@@ -61,25 +61,25 @@
   },
   "lt": {
     "nav": {
-      "home": "Pradžia",
-      "about": "Apie mane",
+      "home": "Pagrindinis",
+      "about": "Apie",
       "skills": "Įgūdžiai",
       "projects": "Projektai"
     },
     "hero": {
-      "greeting": "Sveiki, mano vardas",
+      "greeting": "Sveiki, mano vardas yra",
       "role": "Jaunesnysis Web programuotojas",
-      "viewProjects": "Žiūrėti projektus"
+      "viewProjects": "Peržiūrėti projektus"
     },
     "about": {
       "title": "Apie",
-      "titleAccent": "Mane",
-      "text1": "Esu pradedantis Full Stack programuotojas, šiuo metu studijuoju Vilniaus Coding School JavaScript Full Stack programoje. Mano dėmesio centre yra modernus web kūrimas ir mokymasis, kaip kurti full stack aplikacijas.",
-      "text2": "Backend logika šiuo metu yra ",
-      "text2Accent": "kraunasi",
-      "text3": "Visada ieškau naujų technologijų ir tobulinu savo įgūdžius.",
+      "titleAccent": "Aš",
+      "text1": "Esu jaunesnysis \"Full Stack\" programuotojas, šiuo metu besimokantis Vilniaus kodavimo mokykloje \"JavaScript Full Stack\" programoje. Daugiausia dėmesio skiriu moderniam žiniatinklio svetainių kūrimui ir keičiamo dydžio \"Full Stack\" programų kūrimui.",
+      "text2": "Šiuo metu vyksta galinės dalies kūrimas",
+      "text2Accent": "vykdomas.",
+      "text3": "Nuolat plečiu savo žinias mokydamasis naujų technologijų ir tobulindamas techninius įgūdžius.",
       "cvLabel": "CV",
-      "cvValue": "Atsisiųsti CV"
+      "cvValue": "Atsisiųsti gyvenimo aprašymą"
     },
     "skills": {
       "title": "Mano",
@@ -91,32 +91,29 @@
       "items": [
         {
           "title": "API-Countries-React-Vite",
-          "description": "Naudojau GET užklausas iš RestCountries API ir React Router puslapių navigacijai."
+          "description": "Įgyvendintos GET užklausos į \"RestCountries\" API ir kliento pusės navigacijai naudotas \"React Router\"."
         },
         {
-          "title": "Bookmark-landing-page",
-          "description": "Responsyvus Frontend Mentor iššūkio pradinis puslapis."
+          "title": "Žymės-atvirukų puslapio",
+          "description": "Prisitaikantis nukreipiamasis puslapis, sukurtas pagal \"Frontend Mentor\" iššūkį."
         },
         {
-          "title": "React Todo App",
-          "description": "Todo aplikacija su tamsios/šviesios temos perjungimu, užduočių filtravimu ir localStorage saugojimu."
+          "title": "\"React Todo\" programa",
+          "description": "\"Todo\" programa su temų perjungimu (tamsios/šviesios), filtravimo funkcija ir \"localStorage\" išsaugojimu."
         },
         {
-          "title": "Browser Extension",
-          "description": "Naršyklės plėtinys su filtravimu Visi/Aktyvūs/Neaktyvūs ir temos perjungimu."
+          "title": "Naršyklės plėtinys",
+          "description": "Naršyklės plėtinys su filtravimo (Visi / Aktyvus / Neaktyvus) ir temų perjungimo funkcija."
         },
         {
-          "title": "TV Maze API",
-          "description": "Paprasta žiniatinklio programa TV laidų naršymui naudojant TVMaze API."
+          "title": "TV labirinto API",
+          "description": "Žiniatinklio programa, skirta televizijos laidoms naršyti naudojant \"TVMaze\" API."
         },
         {
-          "title": "E-commerce Product Page",
-          "description": "Produkto puslapis su interaktyvia nuotraukų galerija ir pirkinių krepšelio funkcionalumu."
+          "title": "Elektroninės prekybos produkto puslapis",
+          "description": "Elektroninės prekybos produktų puslapis su interaktyvia vaizdų galerija ir pirkinių krepšelio funkcija."
         }
       ]
-    },
-    "footer": {
-      "copyright": "Vitalij Lazarev."
     }
   }
 }
