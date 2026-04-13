@@ -6,6 +6,9 @@ import { useLang } from "../../contexts/LanguageContext";
 
 import profilePhoto from "../../assets/images/photo/profile-photo.jpg";
 
+import cvEng from "../../assets/cv/Vitalijus-Lazarevas-ENG.pdf";
+import cvLt from "../../assets/cv/Vitalijus-Lazarevas-LT.pdf";
+
 import "./About.scss";
 
 const contacts = [
@@ -30,8 +33,8 @@ const contacts = [
 ];
 
 const cvFiles = [
-  { label: " English", href: "/cv/Vitalijus-Lazarevas-ENG" },
-  { label: " Lietuvių", href: "/cv/Vitalijus-Lazarevas-LT" },
+  { label: " English", href: cvEng },
+  { label: " Lietuvių", href: cvLt },
 ];
 
 function About() {
