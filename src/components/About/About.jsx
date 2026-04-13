@@ -30,7 +30,7 @@ const contacts = [
 ];
 
 const cvFiles = [
-  { label: " English", href: "/cv/vVitalijus-Lazarevas-ENG" },
+  { label: " English", href: "/cv/Vitalijus-Lazarevas-ENG" },
   { label: " Lietuvių", href: "/cv/Vitalijus-Lazarevas-LT" },
 ];
 
