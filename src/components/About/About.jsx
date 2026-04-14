@@ -45,7 +45,7 @@ function About() {
     <section className="about section" id="about">
       <header className="about__container container">
         <h2 className="section__title">
-          {t.about.title} <span>{t.about.me}</span>
+          {t.about.title} <span>{t.about.titleAccent}</span>
         </h2>
 
         <article className="about__content">
@@ -55,10 +55,12 @@ function About() {
 
           <aside className="about__info">
             <article className="about__text">
-              <p>{t.about.description1}</p>
-              <p>{t.about.description2}</p>
-              <p>{t.about.backendProgress}</p>
-              <p>{t.about.learningNewTechnologies}</p>
+              <p>{t.about.text1}</p>
+              <p>
+                {t.about.text2}
+                <span>{t.about.text2Accent}</span>
+              </p>
+              <p>{t.about.text3}</p>
             </article>
 
             <address className="about__contacts">

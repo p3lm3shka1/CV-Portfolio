@@ -16,7 +16,7 @@
       "titleAccent": "Me",
       "text1": "I am a Junior Full Stack Developer currently studying at Vilnius Coding School in the JavaScript Full Stack program. My focus is on modern web development and building scalable full stack applications.",
       "text2": "Backend development is currently",
-      "text2Accent": "in progress.",
+      "text2Accent": "in progress...",
       "text3": "I am continuously expanding my knowledge by learning new technologies and improving my technical skills.",
       "cvLabel": "CV",
       "cvValue": "Download CV"
@@ -73,10 +73,10 @@
     },
     "about": {
       "title": "Apie",
-      "titleAccent": "Aš",
+      "titleAccent": "Mane",
       "text1": "Esu jaunesnysis \"Full Stack\" programuotojas, šiuo metu besimokantis Vilniaus kodavimo mokykloje \"JavaScript Full Stack\" programoje. Daugiausia dėmesio skiriu moderniam žiniatinklio svetainių kūrimui ir keičiamo dydžio \"Full Stack\" programų kūrimui.",
       "text2": "Šiuo metu vyksta galinės dalies kūrimas",
-      "text2Accent": "vykdomas.",
+      "text2Accent": "vykdomas...",
       "text3": "Nuolat plečiu savo žinias mokydamasis naujų technologijų ir tobulindamas techninius įgūdžius.",
       "cvLabel": "CV",
       "cvValue": "Atsisiųsti gyvenimo aprašymą"
