@@ -34,24 +34,24 @@
           "description": "Implemented GET requests to the RestCountries API and used React Router for client-side navigation."
         },
         {
-          "title": "Bookmark-landing-page",
-          "description": "Responsive landing page built based on a Frontend Mentor challenge."
+          "title": "Landing-page",
+          "description": "Responsive landing page, built with json data and React icons."
         },
         {
           "title": "React Todo App",
           "description": "A Todo application featuring theme switching (dark/light), filtering functionality, and localStorage persistence."
         },
         {
-          "title": "Browser Extension",
-          "description": "Browser extension with filtering (All/Active/Inactive) and theme switching functionality."
+          "title": "Wordle Game",
+          "description": "A web-based implementation of the popular Wordle game."
         },
         {
           "title": "TV Maze API",
           "description": "A web application for browsing TV shows using the TVMaze API."
         },
         {
-          "title": "E-commerce Product Page",
-          "description": "E-commerce product page with an interactive image gallery and shopping cart functionality."
+          "title": "E-commerce FakeStore API",
+          "description": "E-commerce application using FakeStore API with routing functionality, authentication, and shopping cart features."
         }
       ]
     },
@@ -94,24 +94,24 @@
           "description": "Įgyvendintos GET užklausos į \"RestCountries\" API ir kliento pusės navigacijai naudotas \"React Router\"."
         },
         {
-          "title": "Žymės-atvirukų puslapio",
-          "description": "Prisitaikantis nukreipiamasis puslapis, sukurtas pagal \"Frontend Mentor\" iššūkį."
+          "title": "Pristatomasis puslapis",
+          "description": "Prisitaikantis nukreipiamasis puslapis, sukurtas naudojant JSON duomenis ir React ikonėles."
         },
         {
           "title": "\"React Todo\" programa",
           "description": "\"Todo\" programa su temų perjungimu (tamsios/šviesios), filtravimo funkcija ir \"localStorage\" išsaugojimu."
         },
         {
-          "title": "Naršyklės plėtinys",
-          "description": "Naršyklės plėtinys su filtravimo (Visi / Aktyvus / Neaktyvus) ir temų perjungimo funkcija."
+          "title": "Wordle Žaidimas",
+          "description": "Žiniatinklio žaidimo \"Wordle\" įgyvendinimas."
         },
         {
           "title": "TV labirinto API",
           "description": "Žiniatinklio programa, skirta televizijos laidoms naršyti naudojant \"TVMaze\" API."
         },
         {
-          "title": "Elektroninės prekybos produkto puslapis",
-          "description": "Elektroninės prekybos produktų puslapis su interaktyvia vaizdų galerija ir pirkinių krepšelio funkcija."
+          "title": "E prekybos FakeStore API",
+          "description": "Elektroninės prekybos programa, naudojanti FakeStore API su funkcionalumu, autentifikacija ir pirkinių krepšelio funkcijomis."
         }
       ]
     }

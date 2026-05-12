@@ -11,7 +11,11 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+
 import { useLang } from "../../contexts/LanguageContext";
+
 import "./Skills.scss";
 
 const skills = [
@@ -25,6 +29,8 @@ const skills = [
   { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
   { name: "Vercel", icon: <IoLogoVercel /> },
   { name: "Git", icon: <FaGitAlt /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "Bootstrap", icon: <FaBootstrap /> },
 ];
 
 function Skills() {

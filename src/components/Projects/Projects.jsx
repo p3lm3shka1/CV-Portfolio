@@ -2,11 +2,11 @@ import { FaGithub } from "react-icons/fa";
 import { IoOpenOutline } from "react-icons/io5";
 
 import restcountries from "../../assets/images/photo/restcountries.jpg";
-import bookmark from "../../assets/images/photo/bookmark.jpg";
+import landing from "../../assets/images/photo/landing-page.png";
 import todo from "../../assets/images/photo/todo.jpg";
-import extensions from "../../assets/images/photo/extensions.jpg";
+import wordle from "../../assets/images/photo/wordle.png";
 import tvmaze from "../../assets/images/photo/tvmaze.png";
-import ecommerce from "../../assets/images/photo/ecommerce.jpg";
+import FakeShop from "../../assets/images/photo/fakeshop.png";
 
 import { useLang } from "../../contexts/LanguageContext";
 
@@ -14,16 +14,16 @@ import "./Projects.scss";
 
 const projectsData = [
   {
-    tech: ["React+Vite", "SCSS", "REST API"],
+    tech: ["React+Vite", "SCSS", "API"],
     image: restcountries,
     github: "https://github.com/p3lm3shka1/API-Countries-React-Vite",
     live: "https://rest-api-countries-react-vite.vercel.app/",
   },
   {
-    tech: ["React+Vite", "Tailwind CSS"],
-    image: bookmark,
-    github: "https://github.com/p3lm3shka1/Bookmark-landing-page-master",
-    live: "https://bookmark-page-react-tailwind.vercel.app/",
+    tech: ["React+Vite", "SCSS", "JSON"],
+    image: landing,
+    github: "https://github.com/p3lm3shka1/Landing-page-VCS-exercise-",
+    live: "https://landing-page-vcs-exercise.vercel.app/",
   },
   {
     tech: ["React+Vite", "SCSS", "JS"],
@@ -32,8 +32,8 @@ const projectsData = [
     live: "https://react-todo-rust-chi.vercel.app/",
   },
   {
-    tech: ["JS", "CSS", "HTML"],
-    image: extensions,
+    tech: ["React+Vite", "SCSS", "JSON"],
+    image: wordle,
     github: "https://github.com/p3lm3shka1/browser-ext",
     live: "https://browser-ext.vercel.app/",
   },
@@ -44,11 +44,10 @@ const projectsData = [
     live: "https://p3lm-tv-api-tvmaze.vercel.app/",
   },
   {
-    tech: ["React+Vite", "SCSS"],
-    image: ecommerce,
-    github:
-      "https://github.com/p3lm3shka1/-E-commerce-product-page-React-Vite-pelme",
-    live: "https://e-commerce-product-page-react-vite.vercel.app/",
+    tech: ["React+Vite", "SCSS", "API", "Route"],
+    image: FakeShop,
+    github: "https://github.com/p3lm3shka1/Fake-Store-API-Route",
+    live: "https://pelm-apistore.space/",
   },
 ];
 
