@@ -52,6 +52,10 @@
         {
           "title": "E-commerce FakeStore API",
           "description": "E-commerce application using FakeStore API with routing functionality, authentication, and shopping cart features."
+        },
+        {
+          "title": "Weather App",
+          "description": "A weather application built with React and TypeScript, utilizing an API for real-time weather data."
         }
       ]
     },
@@ -112,6 +116,10 @@
         {
           "title": "E prekybos FakeStore API",
           "description": "Elektroninės prekybos programa, naudojanti FakeStore API su funkcionalumu, autentifikacija ir pirkinių krepšelio funkcijomis."
+        },
+        {
+          "title": "Orų stebėjimo programa",
+          "description": "Orų stebėjimo programa, sukurta naudojant React ir TypeScript, naudojanti API realaus laiko oro duomenims."
         }
       ]
     }

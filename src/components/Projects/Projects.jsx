@@ -6,7 +6,8 @@ import landing from "../../assets/images/photo/landing-page.png";
 import todo from "../../assets/images/photo/todo.jpg";
 import wordle from "../../assets/images/photo/wordle.png";
 import tvmaze from "../../assets/images/photo/tvmaze.png";
-import FakeShop from "../../assets/images/photo/fakeshop.png";
+import fakeShop from "../../assets/images/photo/fakeshop.png";
+import weather from "../../assets/images/photo/weather.png";
 
 import { useLang } from "../../contexts/LanguageContext";
 
@@ -45,9 +46,15 @@ const projectsData = [
   },
   {
     tech: ["React+Vite", "SCSS", "API", "Route"],
-    image: FakeShop,
+    image: fakeShop,
     github: "https://github.com/p3lm3shka1/Fake-Store-API-Route",
     live: "https://pelm-apistore.space/",
+  },
+  {
+    tech: ["React+Typescript+Vite", "SCSS", "API"],
+    image: weather,
+    github: "https://github.com/p3lm3shka1/weather-app-tsx",
+    live: "https://weather-app-tsx-indol.vercel.app/",
   },
 ];
 
