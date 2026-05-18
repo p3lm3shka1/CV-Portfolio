@@ -38,8 +38,8 @@
           "description": "Responsive landing page, built with json data and React icons."
         },
         {
-          "title": "React Todo App",
-          "description": "A Todo application featuring theme switching (dark/light), filtering functionality, and localStorage persistence."
+          "title": "Full Stack Todo App (TS + Render)",
+          "description": "A fullstack Todo application with theme switching (dark/light), filtering functionality, built with TypeScript, and deployed on Render."
         },
         {
           "title": "Wordle Game",
@@ -98,27 +98,27 @@
           "description": "Įgyvendintos GET užklausos į \"RestCountries\" API ir kliento pusės navigacijai naudotas \"React Router\"."
         },
         {
-          "title": "Pristatomasis puslapis",
+          "title": "Landing puslapis",
           "description": "Prisitaikantis nukreipiamasis puslapis, sukurtas naudojant JSON duomenis ir React ikonėles."
         },
         {
-          "title": "\"React Todo\" programa",
-          "description": "\"Todo\" programa su temų perjungimu (tamsios/šviesios), filtravimo funkcija ir \"localStorage\" išsaugojimu."
+          "title": "Full Stack Todo App (TS + Render)",
+          "description": "Pilnai sukurta \"Todo\" programa su temų perjungimu (tamsios/šviesios), filtravimo funkcija, sukurta naudojant TypeScript ir išleista Render platformoje."
         },
         {
           "title": "Wordle Žaidimas",
           "description": "Žiniatinklio žaidimo \"Wordle\" įgyvendinimas."
         },
         {
-          "title": "TV labirinto API",
+          "title": "TV Maze API",
           "description": "Žiniatinklio programa, skirta televizijos laidoms naršyti naudojant \"TVMaze\" API."
         },
         {
-          "title": "E prekybos FakeStore API",
+          "title": "E-commerce FakeStore API",
           "description": "Elektroninės prekybos programa, naudojanti FakeStore API su funkcionalumu, autentifikacija ir pirkinių krepšelio funkcijomis."
         },
         {
-          "title": "Orų stebėjimo programa",
+          "title": "Weather App",
           "description": "Orų stebėjimo programa, sukurta naudojant React ir TypeScript, naudojanti API realaus laiko oro duomenims."
         }
       ]

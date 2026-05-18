@@ -27,10 +27,10 @@ const projectsData = [
     live: "https://landing-page-vcs-exercise.vercel.app/",
   },
   {
-    tech: ["React+Vite", "SCSS", "JS"],
+    tech: ["React+Typescript+Vite", "SCSS", "API"],
     image: todo,
-    github: "https://github.com/p3lm3shka1/React-Todo-with-Local-Storage",
-    live: "https://react-todo-rust-chi.vercel.app/",
+    github: "https://github.com/p3lm3shka1/Todo-ts",
+    live: "https://todo-ts-prod.vercel.app/",
   },
   {
     tech: ["React+Vite", "SCSS", "JSON"],
