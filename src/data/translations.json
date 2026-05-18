@@ -39,7 +39,7 @@
         },
         {
           "title": "Full Stack Todo App (TS + Render)",
-          "description": "A fullstack Todo application with theme switching (dark/light), filtering functionality, built with TypeScript, and deployed on Render."
+          "description": "A fullstack Todo application built with Vite TS, and deployed on Render."
         },
         {
           "title": "Wordle Game",
@@ -103,7 +103,7 @@
         },
         {
           "title": "Full Stack Todo App (TS + Render)",
-          "description": "Pilnai sukurta \"Todo\" programa su temų perjungimu (tamsios/šviesios), filtravimo funkcija, sukurta naudojant TypeScript ir išleista Render platformoje."
+          "description": "Pilnai sukurta \"Todo\" sukurta naudojant Vite TS ir išleista Render platformoje."
         },
         {
           "title": "Wordle Žaidimas",
