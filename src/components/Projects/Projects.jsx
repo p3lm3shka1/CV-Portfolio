@@ -6,7 +6,7 @@ import landing from "../../assets/images/photo/landing-page.png";
 import todo from "../../assets/images/photo/todo.jpg";
 import wordle from "../../assets/images/photo/wordle.png";
 import tvmaze from "../../assets/images/photo/tvmaze.png";
-import fakeShop from "../../assets/images/photo/fakeshop.png";
+// import fakeShop from "../../assets/images/photo/fakeshop.png";
 import weather from "../../assets/images/photo/weather.png";
 
 import { useLang } from "../../contexts/LanguageContext";
@@ -44,12 +44,12 @@ const projectsData = [
     github: "https://github.com/p3lm3shka1/TV-API-TVmaze-",
     live: "https://p3lm-tv-api-tvmaze.vercel.app/",
   },
-  {
-    tech: ["React+Vite", "SCSS", "API", "Route"],
-    image: fakeShop,
-    github: "https://github.com/p3lm3shka1/Fake-Store-API-Route",
-    live: "https://pelm-apistore.space/",
-  },
+  // {
+  //   tech: ["React+Vite", "SCSS", "API", "Route"],
+  //   image: fakeShop,
+  //   github: "https://github.com/p3lm3shka1/Fake-Store-API-Route",
+  //   live: "https://pelm-apistore.space/",
+  // },
   {
     tech: ["React+Typescript+Vite", "SCSS", "API"],
     image: weather,

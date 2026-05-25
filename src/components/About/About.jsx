@@ -15,20 +15,20 @@ const contacts = [
   {
     icon: <FaLinkedinIn size={20} />,
     label: "LinkedIn",
-    value: "linkedin.com/in/vitalij-lazarev-353857213",
+    value: "Linkedin.com/in/vitalijus-lazarevas",
     href: "https://www.linkedin.com/in/vitalijus-lazarevas-353857213/",
   },
   {
     icon: <FaGithub size={20} />,
     label: "GitHub",
-    value: "github.com/p3lm3shka1",
+    value: "Github.com/p3lm3shka1",
     href: "https://github.com/p3lm3shka1",
   },
   {
     icon: <FaEnvelope size={20} />,
     label: "Email",
-    value: "edovsky@hotmail.com",
-    href: "mailto:edovsky@hotmail.com",
+    value: "Edovsky@hotmail.com",
+    href: "mailto:Edovsky@hotmail.com",
   },
 ];
 
