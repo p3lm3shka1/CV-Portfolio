@@ -35,8 +35,8 @@ const projectsData = [
   {
     tech: ["React+Vite", "SCSS", "JSON"],
     image: wordle,
-    github: "https://github.com/p3lm3shka1/browser-ext",
-    live: "https://browser-ext.vercel.app/",
+    github: "https://github.com/p3lm3shka1/wordle-game",
+    live: "https://wordle-game-kohl-three.vercel.app/",
   },
   {
     tech: ["JS", "CSS", "HTML"],
