@@ -1,25 +1,28 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useLang } from "../../contexts/LanguageContext";
 
 import "./Hero.scss";
 
-function Hero() {
+const Hero = () => {
   const { t } = useLang();
-  const heroRef = useRef(null);
+  const heroRef = useRef("");
 
-  useEffect(() => {
-    const hero = heroRef.current;
-    const handleMouseMove = (e) => {
-      const { left, top } = hero.getBoundingClientRect();
-      hero.style.setProperty("--spotlight-x", `${e.clientX - left}px`);
-      hero.style.setProperty("--spotlight-y", `${e.clientY - top}px`);
-    };
-    hero.addEventListener("mousemove", handleMouseMove);
-    return () => hero.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  const handleMouseMove = (e) => {
+    const flashlight = heroRef.current;
+    if (!flashlight) return;
+
+    const { left, top } = flashlight.getBoundingClientRect();
+    flashlight.style.setProperty("--spotlight-x", `${e.clientX - left}px`);
+    flashlight.style.setProperty("--spotlight-y", `${e.clientY - top}px`);
+  };
 
   return (
-    <section className="hero" id="hero" ref={heroRef}>
+    <section
+      className="hero"
+      id="hero"
+      ref={heroRef}
+      onMouseMove={handleMouseMove}
+    >
       <div className="hero__spotlight" />
       <div className="hero__content container">
         <p className="hero__greeting">{t.hero.greeting}</p>
@@ -37,6 +40,6 @@ function Hero() {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

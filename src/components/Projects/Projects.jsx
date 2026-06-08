@@ -58,7 +58,7 @@ const projectsData = [
   },
 ];
 
-function Projects() {
+const Projects = () => {
   const { t } = useLang();
 
   return (
@@ -77,7 +77,7 @@ function Projects() {
                   alt={`${t.projects.items[ind].title} preview`}
                 />
 
-                <figcaption className="projects__overlay">
+                <div className="projects__overlay">
                   <article className="projects__overlay-content">
                     <h3 className="projects__overlay-title">
                       {t.projects.items[ind].title}
@@ -109,7 +109,7 @@ function Projects() {
                       </a>
                     </nav>
                   </article>
-                </figcaption>
+                </div>
               </figure>
             </li>
           ))}
@@ -117,6 +117,6 @@ function Projects() {
       </header>
     </section>
   );
-}
+};
 
 export default Projects;
