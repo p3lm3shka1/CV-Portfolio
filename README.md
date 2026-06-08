@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-https://cv-portfolio-xi-gold.vercel.app/
+https://cv-portfolio-vl.vercel.app
 
 ## Features
 
