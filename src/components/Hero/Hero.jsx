@@ -1,15 +1,12 @@
 import { useRef } from "react";
-import { useLang } from "../../contexts/LanguageContext";
 
 import "./Hero.scss";
 
 const Hero = () => {
-  const { t } = useLang();
   const heroRef = useRef("");
 
   const handleMouseMove = (e) => {
     const flashlight = heroRef.current;
-    if (!flashlight) return;
 
     const { left, top } = flashlight.getBoundingClientRect();
     flashlight.style.setProperty("--spotlight-x", `${e.clientX - left}px`);
@@ -25,16 +22,16 @@ const Hero = () => {
     >
       <div className="hero__spotlight" />
       <div className="hero__content container">
-        <p className="hero__greeting">{t.hero.greeting}</p>
+        <p className="hero__greeting">Hi, my name is</p>
         <h1 className="hero__name">
           Vitalijus
           <br />
-          <span>Lazarevas</span>
+          <span>Lazarev</span>
         </h1>
-        <h2 className="hero__role">{t.hero.role}</h2>
+        <h2 className="hero__role">Junior Web Developer</h2>
         <div className="hero__actions">
           <a href="#projects" className="hero__btn hero__btn--primary">
-            {t.hero.viewProjects}
+            View Projects
           </a>
         </div>
       </div>

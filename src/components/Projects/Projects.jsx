@@ -9,8 +9,6 @@ import tvmaze from "../../assets/images/photo/tvmaze.png";
 // import fakeShop from "../../assets/images/photo/fakeshop.png";
 import weather from "../../assets/images/photo/weather.png";
 
-import { useLang } from "../../contexts/LanguageContext";
-
 import "./Projects.scss";
 
 const projectsData = [
@@ -19,30 +17,43 @@ const projectsData = [
     image: restcountries,
     github: "https://github.com/p3lm3shka1/API-Countries-React-Vite",
     live: "https://rest-api-countries-react-vite.vercel.app/",
+    title: "Rest Countries",
+    description:
+      "Implemented GET requests to the RestCountries API and used React Router for client-side navigation.",
   },
   {
     tech: ["React+Vite", "SCSS", "JSON"],
     image: landing,
     github: "https://github.com/p3lm3shka1/Landing-page-VCS-exercise-",
     live: "https://landing-page-vcs-exercise.vercel.app/",
+    title: "Landing Page",
+    description: "Created a responsive landing page using React and SCSS.",
   },
   {
     tech: ["React+Typescript+Vite", "SCSS", "API"],
     image: todo,
     github: "https://github.com/p3lm3shka1/Todo-ts",
     live: "https://todo-ts-prod.vercel.app/",
+    title: "Full Stack Todo App (TS + Render)",
+    description:
+      "A fullstack Todo application built with Vite TS, and deployed on Render.",
   },
   {
     tech: ["React+Vite", "SCSS", "JSON"],
     image: wordle,
     github: "https://github.com/p3lm3shka1/wordle-game",
     live: "https://wordle-game-kohl-three.vercel.app/",
+    title: "Wordle Game",
+    description: "A web-based implementation of the popular Wordle game.",
   },
   {
     tech: ["JS", "CSS", "HTML"],
     image: tvmaze,
     github: "https://github.com/p3lm3shka1/TV-API-TVmaze-",
     live: "https://p3lm-tv-api-tvmaze.vercel.app/",
+    title: "TV Maze API",
+    description:
+      "A web application for browsing TV shows using the TVMaze API.",
   },
   // {
   //   tech: ["React+Vite", "SCSS", "API", "Route"],
@@ -55,35 +66,31 @@ const projectsData = [
     image: weather,
     github: "https://github.com/p3lm3shka1/weather-app-tsx",
     live: "https://weather-app-tsx-indol.vercel.app/",
+    title: "Weather App",
+    description:
+      "A weather application built with React and TypeScript, utilizing an API for real-time weather data.",
   },
 ];
 
 const Projects = () => {
-  const { t } = useLang();
-
   return (
     <section className="projects section" id="projects">
       <header className="projects__container container">
         <h2 className="section__title">
-          {t.projects.title} <span>{t.projects.titleAccent}</span>
+          Projects <span>Overview</span>
         </h2>
 
         <ul className="projects__grid">
           {projectsData.map((project, ind) => (
             <li className="projects__card" key={ind}>
-              <figure className="projects__preview">
-                <img
-                  src={project.image}
-                  alt={`${t.projects.items[ind].title} preview`}
-                />
+              <section className="projects__preview">
+                <img src={project.image} alt={`${project.title} preview`} />
 
                 <div className="projects__overlay">
                   <article className="projects__overlay-content">
-                    <h3 className="projects__overlay-title">
-                      {t.projects.items[ind].title}
-                    </h3>
+                    <h3 className="projects__overlay-title">{project.title}</h3>
                     <p className="projects__overlay-desc">
-                      {t.projects.items[ind].description}
+                      {project.description}
                     </p>
                     <ul className="projects__overlay-tech">
                       {project.tech.map((tech) => (
@@ -110,7 +117,7 @@ const Projects = () => {
                     </nav>
                   </article>
                 </div>
-              </figure>
+              </section>
             </li>
           ))}
         </ul>

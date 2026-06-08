@@ -3,7 +3,7 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 import logo from "../../assets/images/logos/logo.png";
 import "./Footer.scss";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container container">
@@ -46,6 +46,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

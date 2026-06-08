@@ -1,22 +1,19 @@
 import { useState, useEffect } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
-import { useLang } from "../../contexts/LanguageContext";
-
 import logo from "../../assets/images/logos/logo.png";
 
 import "./Navbar.scss";
 
-function Navbar() {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { lang, t, toggleLang } = useLang();
 
   const navLinks = [
-    { name: t.nav.home, href: "#hero" },
-    { name: t.nav.about, href: "#about" },
-    { name: t.nav.skills, href: "#skills" },
-    { name: t.nav.projects, href: "#projects" },
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
   ];
 
   useEffect(() => {
@@ -45,10 +42,6 @@ function Navbar() {
           ))}
         </ul>
         <div className="navbar__right">
-          <button className="navbar__lang" onClick={toggleLang}>
-            {lang === "en" ? "LT" : "EN"}
-          </button>
-
           <button
             className="navbar__toggle"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -60,6 +53,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

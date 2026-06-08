@@ -14,8 +14,6 @@ import { SiMongodb } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 
-import { useLang } from "../../contexts/LanguageContext";
-
 import "./Skills.scss";
 
 const skills = [
@@ -33,14 +31,12 @@ const skills = [
   { name: "Bootstrap", icon: <FaBootstrap /> },
 ];
 
-function Skills() {
-  const { t } = useLang();
-
+const Skills = () => {
   return (
     <section className="skills section" id="skills">
       <div className="skills__container container">
         <h2 className="section__title">
-          {t.skills.title} <span>{t.skills.titleAccent}</span>
+          Skills <span>Overview</span>
         </h2>
         <div className="skills__grid">
           {skills.map((skill) => (
@@ -53,6 +49,6 @@ function Skills() {
       </div>
     </section>
   );
-}
+};
 
 export default Skills;
