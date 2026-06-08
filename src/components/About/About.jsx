@@ -4,38 +4,11 @@ import { SiReaddotcv } from "react-icons/si";
 
 import profilePhoto from "../../assets/images/photo/profile-photo.jpg";
 
-import cvEng from "../../assets/cv/Vitalijus-Lazarevas-ENG.pdf";
-import cvLt from "../../assets/cv/Vitalijus-Lazarevas-LT.pdf";
+import { contacts, cvFiles } from "../../data/aboutData";
 
 import "./About.scss";
 
-const contacts = [
-  {
-    icon: <FaLinkedinIn size={20} />,
-    label: "LinkedIn",
-    value: "Linkedin.com/in/vitalijus-lazarevas",
-    href: "https://www.linkedin.com/in/vitalijus-lazarevas-353857213/",
-  },
-  {
-    icon: <FaGithub size={20} />,
-    label: "GitHub",
-    value: "Github.com/p3lm3shka1",
-    href: "https://github.com/p3lm3shka1",
-  },
-  {
-    icon: <FaEnvelope size={20} />,
-    label: "Email",
-    value: "Edovsky@hotmail.com",
-    href: "mailto:Edovsky@hotmail.com",
-  },
-];
-
-const cvFiles = [
-  { label: " English", href: cvEng },
-  { label: " Lietuvių", href: cvLt },
-];
-
-function About() {
+const About = () => {
   const [cvOpen, setCvOpen] = useState(false);
 
   return (
@@ -46,27 +19,24 @@ function About() {
           <span>Me</span>
         </h2>
 
-        <article className="about__content">
+        <section className="about__content">
           <div className="about__image">
             <img src={profilePhoto} alt="Vitalij Lazarev" />
           </div>
 
           <aside className="about__info">
-            <article className="about__text">
+            <section className="about__text">
               <p>
                 I am a Junior Full Stack Developer currently studying at Vilnius
                 Coding School in the JavaScript Full Stack program. I specialize
-                in frontend development, focusing on modern technologies and
-                best practices.
+                in frontend development, focusing on modern technologies.
               </p>
+              <p>I am currently improving my backend skills.</p>
               <p>
-                <span> Now improving my skills in backend development..</span>
+                In my free time, I keep learning new technologies and building
+                personal projects.
               </p>
-              <p>
-                In my free time, I'm continuously expanding my knowledge by
-                learning new technologies and improving my technical skills.
-              </p>
-            </article>
+            </section>
             <section className="about__contacts">
               {contacts.map((item) => (
                 <a
@@ -76,7 +46,12 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="about__contact-icon">{item.icon}</div>
+                  {item.icon && (
+                    <div className="about__contact-icon">
+                      {<item.icon size={20} />}
+                    </div>
+                  )}
+
                   <div className="about__contact-info">
                     <span className="about__contact-label">{item.label}</span>
                     <span className="about__contact-value">{item.value}</span>
@@ -124,10 +99,10 @@ function About() {
               </nav>
             </section>
           </aside>
-        </article>
+        </section>
       </header>
     </section>
   );
-}
+};
 
 export default About;

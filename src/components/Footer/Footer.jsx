@@ -1,5 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import { RiGitRepositoryFill } from "react-icons/ri";
+
 import logo from "../../assets/images/logos/logo.png";
 import "./Footer.scss";
 
