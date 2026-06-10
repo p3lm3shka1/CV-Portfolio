@@ -25,43 +25,5 @@ https://cv-portfolio-vl.vercel.app
 | DeepL API | Auto-translation for multi-language support |  (in progress..)
 | dotenv | Secure API key management |
 
-## Project Structure
 
-```
-CV-Portfolio/
-├── public/
-│   └── cv/
-│       ├── vitalij-lazarev-ENG.pdf
-│       └── vitalij-lazarev-LT.pdf
-├── scripts/
-│   └── translate.js            # DeepL auto-translation script (in progress)
-├── src/
-│   ├── assets/images/
-│   │   ├── logos/              
-│   │   └── photo/             
-│   ├── components/
-│   │   ├── About/              
-│   │   ├── Footer/            
-│   │   ├── Hero/               
-│   │   ├── Navbar/             
-│   │   ├── Projects/           
-│   │   └── Skills/            
-│   ├── contexts/
-│   │   └── LanguageContext.jsx  # offline language change
-│   ├── data/
-│   │   └── translations.json   # EN/LT translations (in progress)
-│   ├── styles/
-│   │   ├── _globals.scss       
-│   │   ├── _media.scss         
-│   │   ├── _reset.scss         
-│   │   └── _variables.scss     
-│   ├── App.jsx
-│   ├── App.scss
-│   └── main.jsx
-├── index.html
-└── vite.config.js
-```
-
----
-
-Built by [Vitalijus Lazarevas](https://github.com/p3lm3shka1)
+Built by [Vitalijus Lazarev](https://github.com/p3lm3shka1)
