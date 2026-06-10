@@ -10,13 +10,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: $nav-height;
+  scroll-padding-top: var(--nav-height);
 }
 
 body {
-  font-family: $font-main;
-  background-color: $bg-primary;
-  color: $text-primary;
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }

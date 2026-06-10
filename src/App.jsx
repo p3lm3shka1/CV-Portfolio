@@ -9,7 +9,7 @@ import "@fontsource-variable/raleway";
 
 import "./App.scss";
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <Navbar />
@@ -20,6 +20,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

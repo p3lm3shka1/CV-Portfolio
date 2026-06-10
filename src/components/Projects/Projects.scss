@@ -2,7 +2,7 @@
 @use "../../styles/media" as *;
 
 .projects {
-  background-color: $bg-secondary;
+  background-color: var(--bg-secondary);
 
   &__grid {
     display: grid;
@@ -20,11 +20,11 @@
   &__card {
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid $border;
+    border: 1px solid var(--border);
     transition: all 0.3s ease;
 
     &:hover {
-      border-color: $accent;
+      border-color: var(--accent);
       transform: translateY(-5px);
 
       .projects__overlay {
@@ -64,11 +64,7 @@
   &__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(10, 10, 10, 0.3) 0%,
-      rgba(10, 10, 10, 0.95) 70%
-    );
+    background: var(--projects-overlay);
     display: flex;
     align-items: flex-end;
     padding: 28px;
@@ -85,12 +81,12 @@
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 8px;
-    color: $text-primary;
+    color: var(--text-primary);
   }
 
   &__overlay-desc {
     font-size: 0.9rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
     margin-bottom: 12px;
     line-height: 1.6;
   }
@@ -105,11 +101,12 @@
 
     li {
       font-size: 0.78rem;
-      padding: 4px 12px;
-      background-color: rgba(231, 76, 60, 0.15);
-      color: $accent;
+      padding: 2px 10px;
+      background-color: rgba(var(--accent-rgb), 0.1);
+
+      color: var(--accent);
       border-radius: 20px;
-      font-weight: 500;
+      font-weight: 600;
     }
   }
 
@@ -121,16 +118,16 @@
       width: 42px;
       height: 42px;
       border-radius: 50%;
-      background-color: rgba($text-primary, 0.1);
+
       display: flex;
       align-items: center;
       justify-content: center;
-      color: $text-primary;
+      color: var(--accent);
 
-      filter: $filter;
+      filter: var(--filter);
 
       &:hover {
-        filter: $filter-hover;
+        filter: var(--filter-hover);
       }
     }
   }

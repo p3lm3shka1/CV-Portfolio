@@ -2,18 +2,18 @@
 
 .app {
   min-height: 100vh;
-  background-color: $bg-primary;
-  color: $text-primary;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .container {
-  max-width: $container-width;
+  max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .section {
-  padding: $section-padding;
+  padding: var(--section-padding);
 }
 
 .section__title {
@@ -23,13 +23,13 @@
   margin-bottom: 12px;
 
   span {
-    color: $accent;
+    color: var(--accent);
   }
 }
 
 .section__subtitle {
   text-align: center;
-  color: $text-secondary;
+  color: var(--text-secondary);
   font-size: 1rem;
   margin-bottom: 60px;
 }

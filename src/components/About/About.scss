@@ -2,7 +2,7 @@
 @use "../../styles/media" as *;
 
 .about {
-  background-color: $bg-secondary;
+  background-color: var(--bg-secondary);
 
   &__content {
     display: grid;
@@ -38,13 +38,13 @@
     margin-bottom: 2rem;
 
     p {
-      color: $text-secondary;
+      color: var(--text-secondary);
       font-size: 1rem;
       margin-bottom: 16px;
       line-height: 1.8;
     }
     span {
-      color: $accent;
+      color: var(--accent);
       font-weight: 600;
       margin: 0 4px;
     }
@@ -62,14 +62,14 @@
     align-items: center;
     gap: 16px;
     padding: 16px 20px;
-    background-color: $bg-card;
-    border: 1px solid $border;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 10px;
     transition: all 0.3s ease;
 
     &:hover {
-      border-color: $accent;
-      background-color: $bg-card-hover;
+      border-color: var(--accent);
+      background-color: var(--bg-card-hover);
     }
   }
 
@@ -82,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $accent;
+    color: var(--accent);
   }
 
   &__contact-info {
@@ -94,14 +94,14 @@
   &__contact-label {
     font-size: 0.85rem;
     font-weight: 600;
-    color: $text-primary;
+    color: var(--text-primary);
     display: flex;
     justify-content: flex-start;
   }
 
   &__contact-value {
     font-size: 0.8rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
   }
 
   &__cv-wrapper {
@@ -113,8 +113,8 @@
     cursor: pointer;
 
     &.active {
-      border-color: $accent;
-      background-color: $bg-card-hover;
+      border-color: var(--accent);
+      background-color: var(--bg-card-hover);
       border-radius: 10px 10px 0 0;
     }
   }
@@ -122,7 +122,7 @@
   &__cv-arrow {
     margin-left: auto;
     font-size: 1.4rem;
-    color: $text-muted;
+    color: var(--text-muted);
     transition: transform 0.3s ease;
 
     &--open {
@@ -150,12 +150,12 @@
   &__cv-option {
     display: block;
     padding: 14px 20px 14px 80px;
-    background-color: $bg-card;
-    border: 1px solid $border;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
     border-top: none;
     font-size: 0.9rem;
     font-weight: 500;
-    color: $text-secondary;
+    color: var(--text-secondary);
     list-style: none;
     transition: all 0.3s ease;
 
@@ -164,8 +164,8 @@
     }
 
     &:hover {
-      background-color: $bg-card-hover;
-      color: $accent;
+      background-color: var(--bg-card-hover);
+      color: var(--accent);
       padding-left: 88px;
     }
   }

@@ -37,18 +37,18 @@
     align-items: center;
     justify-content: center;
     font-size: 5rem;
-    color: $text-secondary;
+    color: var(--text-secondary);
     transition: color 0.3s ease;
   }
 
   &__card:hover &__icon {
-    color: $accent;
+    color: var(--accent);
   }
 
   &__name {
     font-size: 0.9rem;
     font-weight: 500;
-    color: $text-secondary;
+    color: var(--text-secondary);
     text-align: center;
   }
 }

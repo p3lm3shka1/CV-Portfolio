@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: $nav-height;
+  height: var(--nav-height);
   z-index: 999;
   margin: 0 auto;
   transition:
@@ -14,7 +14,7 @@
     box-shadow 0.3s ease;
 
   &--scrolled {
-    background-color: rgba(10, 10, 10, 0.6);
+    background-color: var(--navbar-bg);
     backdrop-filter: blur(10px);
   }
 
@@ -28,14 +28,14 @@
   }
 
   &__logo {
-    filter: $filter;
+    filter: var(--filter);
 
     &:hover {
-      filter: $filter-hover;
+      filter: var(--filter-hover);
     }
 
     span {
-      color: $accent;
+      color: var(--accent);
     }
   }
 
@@ -49,7 +49,7 @@
     a {
       font-size: 0.95rem;
       font-weight: 500;
-      color: $text-secondary;
+      color: var(--text-secondary);
       transition: color 0.2s ease;
       position: relative;
 
@@ -60,12 +60,12 @@
         left: 0;
         width: 0;
         height: 2px;
-        background-color: $accent;
+        background-color: var(--accent);
         transition: width 0.3s ease;
       }
 
       &:hover {
-        color: $text-primary;
+        color: var(--text-primary);
 
         &::after {
           width: 100%;
@@ -80,7 +80,7 @@
       width: 70%;
       height: 100vh;
       flex-direction: column;
-      background-color: rgba($bg-secondary, 0.7);
+      background-color: rgba(var(--bg-secondary), 0.7);
       padding: 100px 40px 40px;
       backdrop-filter: blur(10px);
       gap: 24px;
@@ -98,7 +98,7 @@
 
   &__toggle {
     display: none;
-    color: $text-primary;
+    color: var(--text-primary);
     z-index: 1001;
 
     @include tablet {
@@ -110,7 +110,7 @@
   &__icon--close {
     width: 24px;
     height: 24px;
-    filter: $filter;
+    filter: var(--filter);
   }
 
   &__right {
@@ -121,11 +121,25 @@
 
   &__toggle {
     display: none;
-    color: $text-primary;
+    color: var(--text-primary);
     z-index: 1001;
 
     @include tablet {
       display: block;
+    }
+  }
+
+  &__lang {
+    transition: color 0.2s ease;
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &__theme {
+    transition: color 0.2s ease;
+    &:hover {
+      color: var(--accent);
     }
   }
 }

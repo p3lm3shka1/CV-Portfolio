@@ -9,7 +9,7 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding-top: $nav-height;
+  padding-top: var(--nav-height);
 
   --spotlight-x: 50%;
   --spotlight-y: 50%;
@@ -19,8 +19,8 @@
     inset: 0;
     background: radial-gradient(
       500px circle at var(--spotlight-x) var(--spotlight-y),
-      rgba(231, 76, 60, 0.3) 0%,
-      rgba(231, 76, 60, 0.1) 40%,
+      rgba(var(--accent-rgb), 0.3) 0%,
+      rgba(var(--accent-rgb), 0.1) 40%,
       transparent 80%
     );
     pointer-events: none;
@@ -32,7 +32,7 @@
   }
 
   &__greeting {
-    color: $accent;
+    color: var(--accent);
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 2px;
@@ -48,7 +48,7 @@
     margin-bottom: 20px;
 
     span {
-      color: $accent;
+      color: var(--accent);
     }
 
     @include tablet {
@@ -64,7 +64,7 @@
   &__role {
     font-size: 2rem;
     font-weight: 300;
-    color: $text-secondary;
+    color: var(--text-secondary);
     margin-bottom: 48px;
     overflow: hidden;
 
@@ -90,22 +90,22 @@
     transition: all 0.3s ease;
 
     &--primary {
-      background-color: $accent;
-      color: $text-primary;
+      background-color: var(--accent);
+      color: var(--text-primary);
 
       &:hover {
-        background-color: $accent-hover;
+        background-color: var(--accent-hover);
         transform: translateY(-2px);
       }
     }
 
     &--outline {
-      border: 2px solid $border;
-      color: $text-primary;
+      border: 2px solid var(--border);
+      color: var(--text-primary);
 
       &:hover {
-        border-color: $accent;
-        color: $accent;
+        border-color: var(--accent);
+        color: var(--accent);
         transform: translateY(-2px);
       }
     }
