@@ -6,6 +6,7 @@ import {
   HiOutlineMoon,
   HiOutlineGlobeAlt,
 } from "react-icons/hi";
+import { useLang } from "../../contexts/LanguageContext";
 
 import logo from "../../assets/images/logos/logo.png";
 
@@ -19,14 +20,14 @@ const getInitialTheme = () => {
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const { lang, trans, toggleLang } = useLang();
   const [theme, setTheme] = useState(getInitialTheme);
 
   const navLinks = [
-    { name: "Home", href: "#hero" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
+    { name: trans.nav.home, href: "#hero" },
+    { name: trans.nav.about, href: "#about" },
+    { name: trans.nav.skills, href: "#skills" },
+    { name: trans.nav.projects, href: "#projects" },
   ];
 
   useEffect(() => {
@@ -36,10 +37,6 @@ const Navbar = () => {
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  };
-
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "lt" : "en"));
   };
 
   useEffect(() => {
@@ -78,12 +75,7 @@ const Navbar = () => {
             )}
           </button>
 
-          <button
-            className="navbar__lang"
-            onClick={() => {
-              setLanguage;
-            }}
-          >
+          <button className="navbar__lang" onClick={toggleLang}>
             <HiOutlineGlobeAlt size={28} />
           </button>
 

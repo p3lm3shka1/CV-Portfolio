@@ -5,18 +5,20 @@ import { SiReaddotcv } from "react-icons/si";
 import profilePhoto from "../../assets/images/photo/profile-photo.jpg";
 
 import { contacts, cvFiles } from "../../data/aboutData";
+import { useLang } from "../../contexts/LanguageContext";
 
 import "./About.scss";
 
 const About = () => {
   const [cvOpen, setCvOpen] = useState(false);
+  const { lang, trans } = useLang();
 
   return (
     <section className="about section" id="about">
       <header className="about__container container">
         <h2 className="section__title">
-          About {""}
-          <span>Me</span>
+          {trans.about.title} {""}
+          <span>{trans.about.titleAccent}</span>
         </h2>
 
         <section className="about__content">
@@ -26,16 +28,11 @@ const About = () => {
 
           <aside className="about__info">
             <section className="about__text">
+              <p>{trans.about.text1}</p>
               <p>
-                I am a Junior Full Stack Developer currently studying at Vilnius
-                Coding School in the JavaScript Full Stack program. I specialize
-                in frontend development, focusing on modern technologies.
+                {trans.about.text2} <span>{trans.about.text2Accent}</span>
               </p>
-              <p>I am currently improving my backend skills.</p>
-              <p>
-                In my free time, I keep learning new technologies and building
-                personal projects.
-              </p>
+              <p>{trans.about.text3}</p>
             </section>
             <section className="about__contacts">
               {contacts.map((item) => (
@@ -68,8 +65,12 @@ const About = () => {
                     <SiReaddotcv size={20} />
                   </div>
                   <section className="about__contact-info">
-                    <span className="about__contact-label">CV</span>
-                    <span className="about__contact-value">View CV</span>
+                    <span className="about__contact-label">
+                      {trans.about.cvLabel}
+                    </span>
+                    <span className="about__contact-value">
+                      {trans.about.cvValue}
+                    </span>
                   </section>
                   <span
                     className={`about__cv-arrow ${cvOpen ? "about__cv-arrow--open" : ""}`}

@@ -8,16 +8,18 @@
     },
     "hero": {
       "greeting": "Hi, my name is",
+      "name": "Vitalijus",
+      "surname": "Lazarev",
       "role": "Junior Web Developer",
       "viewProjects": "View Projects"
     },
     "about": {
       "title": "About",
       "titleAccent": "Me",
-      "text1": "I am a Junior Full Stack Developer currently studying at Vilnius Coding School in the JavaScript Full Stack program. My focus is on modern web development and building scalable full stack applications.",
-      "text2": "Backend development is currently",
-      "text2Accent": "in progress...",
-      "text3": "I am continuously expanding my knowledge by learning new technologies and improving my technical skills.",
+      "text1": "I am a Junior Full Stack Developer currently studying at Vilnius Coding School in the JavaScript Full Stack program. I specialize in frontend development, focusing on modern technologies.",
+      "text2": "I am currently improving my backend skills.",
+      "text2Accent": "(in progress...)",
+      "text3": "In my free time, I keep learning new technologies and building personal projects.",
       "cvLabel": "CV",
       "cvValue": "Download CV"
     },
@@ -28,41 +30,38 @@
     "projects": {
       "title": "My",
       "titleAccent": "Projects",
-      "items": [
-        {
-          "title": "API-Countries-React-Vite",
-          "description": "Implemented GET requests to the RestCountries API and used React Router for client-side navigation."
+      "items": {
+        "Countries": {
+          "title": "Rest Countries",
+          "description": "Implemented REST API requests and client-side navigation with React Router."
         },
-        {
-          "title": "Landing-page",
-          "description": "Responsive landing page, built with json data and React icons."
+        "Landing": {
+          "title": "Landing Page",
+          "description": "Created a responsive landing page with React and SCSS."
         },
-        {
-          "title": "Full Stack Todo App (TS + Render)",
-          "description": "A fullstack Todo application built with Vite TS, and deployed on Render."
+        "Todo": {
+          "title": "Full Stack Todo App",
+          "description": "A full-stack Todo application built with TypeScript, MongoDB and Render."
         },
-        {
+        "Wordle": {
           "title": "Wordle Game",
           "description": "A web-based implementation of the popular Wordle game."
         },
-        {
+        "TVMaze": {
           "title": "TV Maze API",
           "description": "A web application for browsing TV shows using the TVMaze API."
         },
-        {
-          "title": "E-commerce FakeStore API",
-          "description": "E-commerce application using FakeStore API with routing functionality, authentication, and shopping cart features."
-        },
-        {
+        "Weather": {
           "title": "Weather App",
-          "description": "A weather application built with React and TypeScript, utilizing an API for real-time weather data."
+          "description": "A weather application built with React and TypeScript for real-time weather data."
         }
-      ]
-    },
-    "footer": {
-      "copyright": "Vitalij Lazarev."
+      }
     }
   },
+  "footer": {
+    "copyright": "Vitalijus Lazarev."
+  },
+
   "lt": {
     "nav": {
       "home": "Pagrindinis",
@@ -72,16 +71,18 @@
     },
     "hero": {
       "greeting": "Sveiki, mano vardas yra",
+      "name": "Vitalijus",
+      "surname": "Lazarev",
       "role": "Jaunesnysis Web programuotojas",
       "viewProjects": "Peržiūrėti projektus"
     },
     "about": {
       "title": "Apie",
       "titleAccent": "Mane",
-      "text1": "Esu jaunesnysis \"Full Stack\" programuotojas, šiuo metu besimokantis Vilniaus kodavimo mokykloje \"JavaScript Full Stack\" programoje. Daugiausia dėmesio skiriu moderniam žiniatinklio svetainių kūrimui ir keičiamo dydžio \"Full Stack\" programų kūrimui.",
-      "text2": "Šiuo metu backend kūrimas yra",
-      "text2Accent": "vykdomas...",
-      "text3": "Nuolat plečiu savo žinias mokydamasis naujų technologijų ir tobulindamas techninius įgūdžius.",
+      "text1": "Esu jaunesnysis Full Stack programuotojas, studijuojantis „JavaScript Full Stack“ programoje Vilnius Coding School. Daugiausia dėmesio skiriu frontend kūrimui ir šiuolaikinėms interneto technologijoms.",
+      "text2": "Šiuo metu aktyviai gilinu backend programavimo žinias.",
+      "text2Accent": "(vykdomas...)",
+      "text3": "Nuolat tobulinu savo įgūdžius, domiuosi naujomis technologijomis ir kuriu asmeninius projektus.",
       "cvLabel": "CV",
       "cvValue": "Atsisiųsti gyvenimo aprašymą"
     },
@@ -92,36 +93,32 @@
     "projects": {
       "title": "Mano",
       "titleAccent": "Projektai",
-      "items": [
-        {
-          "title": "API-Countries-React-Vite",
-          "description": "Įgyvendintos GET užklausos į \"RestCountries\" API ir kliento pusės navigacijai naudotas \"React Router\"."
+      "items": {
+        "Countries": {
+          "title": "API Countries React",
+          "description": "Įgyvendintos REST API užklausos ir navigacija kliento pusėje naudojant React Router."
         },
-        {
-          "title": "Landing puslapis",
-          "description": "Prisitaikantis nukreipiamasis puslapis, sukurtas naudojant JSON duomenis ir React ikonėles."
+        "Landing": {
+          "title": "Landing Page",
+          "description": "Responsive puslapis, sukurtas naudojant JSON duomenis ir React piktogramas."
         },
-        {
-          "title": "Full Stack Todo App (TS + Render)",
-          "description": "Pilnai sukurta \"Todo\" sukurta naudojant Vite TS ir išleista Render platformoje."
+        "Todo": {
+          "title": "Full Stack Todo App",
+          "description": "Full Stack Todo App, sukurta naudojant TypeScript, MongoDB ir Render."
         },
-        {
+        "Wordle": {
           "title": "Wordle Žaidimas",
-          "description": "Žiniatinklio žaidimo \"Wordle\" įgyvendinimas."
+          "description": "Internetinė populiaraus Wordle žaidimo versija."
         },
-        {
+        "TVMaze": {
           "title": "TV Maze API",
-          "description": "Žiniatinklio programa, skirta televizijos laidoms naršyti naudojant \"TVMaze\" API."
+          "description": "Internetinė programa TV laidoms naršyti naudojant TVMaze API."
         },
-        {
-          "title": "E-commerce FakeStore API",
-          "description": "Elektroninės prekybos programa, naudojanti FakeStore API su funkcionalumu, autentifikacija ir pirkinių krepšelio funkcijomis."
-        },
-        {
-          "title": "Weather App",
-          "description": "Orų stebėjimo programa, sukurta naudojant React ir TypeScript, naudojanti API realaus laiko oro duomenims."
+        "Weather": {
+          "title": "Orų programa",
+          "description": "Orų programa, sukurta naudojant React ir TypeScript bei naudojanti API realaus laiko orų duomenims gauti."
         }
-      ]
+      }
     }
   }
 }
