@@ -47,9 +47,9 @@
           "title": "Wordle Game",
           "description": "A web-based implementation of the popular Wordle game."
         },
-        "TVMaze": {
-          "title": "TV Maze API",
-          "description": "A web application for browsing TV shows using the TVMaze API."
+        "CoffeeShop": {
+          "title": "Coffee Shop",
+          "description": "Full Stack Coffee Shop project built with React, MongoDB, Render."
         },
         "Weather": {
           "title": "Weather App",
@@ -104,15 +104,15 @@
         },
         "Todo": {
           "title": "Full Stack Todo App",
-          "description": "Full Stack Todo App, sukurta naudojant TypeScript, MongoDB ir Render."
+          "description": "Full Stack Todo App, sukurtas naudojant TypeScript, MongoDB ir Render."
         },
         "Wordle": {
           "title": "Wordle Žaidimas",
           "description": "Internetinė populiaraus Wordle žaidimo versija."
         },
-        "TVMaze": {
-          "title": "TV Maze API",
-          "description": "Internetinė programa TV laidoms naršyti naudojant TVMaze API."
+        "CoffeeShop": {
+          "title": "Coffee Shop",
+          "description": "Full Stack Coffee Shop projektas, sukurtas naudojant React, MongoDB ir Render."
         },
         "Weather": {
           "title": "Orų programa",

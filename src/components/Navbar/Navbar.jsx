@@ -12,7 +12,7 @@ import logo from "../../assets/images/logos/logo.png";
 
 import "./Navbar.scss";
 
-const getInitialTheme = () => {
+const getTheme = () => {
   const savedTheme = localStorage.getItem("theme");
   return savedTheme || "dark";
 };
@@ -21,7 +21,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { lang, trans, toggleLang } = useLang();
-  const [theme, setTheme] = useState(getInitialTheme);
+  const [theme, setTheme] = useState(getTheme);
 
   const navLinks = [
     { name: trans.nav.home, href: "#hero" },
