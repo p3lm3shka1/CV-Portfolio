@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
           <div className="footer__socials">
             <a
-              href="https://www.linkedin.com/in/vitalijus-lazarevas-353857213/"
+              href="https://www.linkedin.com/in/vitalijus-lazarev-353857213/"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"

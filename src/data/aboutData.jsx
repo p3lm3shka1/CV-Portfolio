@@ -8,7 +8,7 @@ export const contacts = [
     icon: FaLinkedinIn,
     label: "LinkedIn",
     value: "linkedin.com/in/vitalijus-lazarevas",
-    href: "https://www.linkedin.com/in/vitalijus-lazarevas-353857213/",
+    href: "www.linkedin.com/in/vitalijus-lazarev-353857213/",
   },
   {
     icon: FaGithub,
