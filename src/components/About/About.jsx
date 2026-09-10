@@ -29,8 +29,19 @@ const About = () => {
           <aside className="about__info">
             <section className="about__text">
               <p>{trans.about.text1}</p>
-              <p>
-                {trans.about.text2} <span>{trans.about.text2Accent}</span>
+              <p className="about__text__status">
+                {trans.about.text2}{" "}
+                <span className="about__text__status-text">
+                  <span className="about__text__status-prefix">
+                    ({trans.about.text2Accent}
+                  </span>
+                  <span className="about__text__dots">
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                  </span>
+                  <span className="about__text__status-suffix">)</span>
+                </span>
               </p>
               <p>{trans.about.text3}</p>
             </section>
